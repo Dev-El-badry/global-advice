@@ -1,0 +1,15 @@
+.aboutus {
+    padding: 40px 0;
+}
+
+p {
+    text-align: justify;
+    line-height: 2;
+    font-size: 18px;
+}
+
+h2,
+h4,
+h3 {
+    color: var(--first-color)
+}

@@ -1,0 +1,19 @@
+<div class="our-team">
+    <h2>‫ ادارة جلوبال ادفايس‬ </h2>
+    <div class="container">
+        <div fxLayout="row wrap" fxLaoutGap="40px" fxLayoutAlign="center">
+            <div class="inner" *ngFor="let person of persons">
+
+                <mat-card class="person" fxFlex="300px">
+                    <img src="assets/images/person.png" width="100" alt="person">
+                    <mat-card-title>
+                        {{ person.name }}
+                    </mat-card-title>
+                    <mat-card-subtitle>{{ person.position }}</mat-card-subtitle>
+                </mat-card>
+
+
+            </div>
+        </div>
+    </div>
+</div>

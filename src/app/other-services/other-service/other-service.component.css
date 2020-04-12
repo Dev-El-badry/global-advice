@@ -1,0 +1,18 @@
+.other-service {
+    margin: 20px auto;
+}
+
+h4 {
+    margin-top: 7px;
+    color: var(--first-color);
+}
+
+i {
+    font-size: 40px;
+    color: var(--second-color);
+    padding: 20px 25px;
+    background: #fff;
+    border-radius: 50%;
+    border-color: var(--second-color);
+    border: 1px solid;
+}

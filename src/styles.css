@@ -1,0 +1,94 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: Circle-Light;
+    src: url('assets/fonts/Circle-Light.otf') format("opentype");
+}
+
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Circle-Light, Roboto !important;
+}
+
+.mat-button,
+.mat-fab,
+.mat-flat-button,
+.mat-icon-button,
+.mat-mini-fab,
+.mat-raised-button,
+.mat-stroked-button,
+.mat-card,
+.mat-checkbox {
+    font-family: Circle-Light, Roboto !important;
+}
+
+:root {
+    --first-color: #00002D;
+    --second-color: #03CD00;
+    --third-color: #020015;
+    --gradient-color: linear-gradient(to right, #00002D, #03CD00);
+}
+
+
+/* Container */
+
+.container {
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+
+/* Border */
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: white;
+}
+
+
+/* Font color */
+
+.contactus input.mat-input-element {
+    color: white;
+}
+
+.contactus mat-label {
+    color: white;
+}
+
+.mat-form-field-wrapper {
+    padding-bottom: 0;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-wrapper {
+    margin: 0;
+}
+
+.mat-form-field {
+    font-family: Circle-Light;
+}

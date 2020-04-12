@@ -1,0 +1,40 @@
+mat-toolbar {
+    background-color: #fff;
+}
+
+.nav-links {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.mat-button {
+    font-size: 17px;
+    font-weight: bold;
+    color: var(--first-color);
+    margin: auto 20px;
+}
+
+.mat-button:hover {
+    background: var(--first-color);
+    color: #fff;
+}
+
+nav {
+    position: relative;
+}
+
+span.seprator {
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    width: 86%;
+    height: 2px;
+    text-align: center;
+    margin: 0 auto;
+    background: var(--gradient-color);
+}
+
+.active-link {
+    background: var(--first-color);
+    color: #fff;
+}

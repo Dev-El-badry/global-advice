@@ -1,0 +1,19 @@
+<div class="services">
+
+    <div class="container">
+        <h2>
+            {{'service.title2' | translate}}
+        </h2>
+        <p>
+            {{'service.subtitle' | translate}}
+        </p>
+        <mat-grid-list cols="2" rowHeight="220px" gutterSize="10px">
+            <mat-grid-tile *ngFor="let service of services">
+
+
+                <app-service [service]="service"></app-service>
+
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</div>

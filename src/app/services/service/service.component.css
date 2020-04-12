@@ -1,0 +1,23 @@
+mat-icon {
+    color: var(--second-color);
+    border: 1px solid var(--second-color);
+    padding: 20px;
+    border-radius: 50px;
+    margin-bottom: 5px;
+}
+
+mat-card-content {
+    text-align: justify;
+}
+
+mat-card {
+    height: 170px;
+}
+
+mat-card-title {
+    color: var(--first-color);
+}
+
+mat-card-content {
+    color: var(--first-color);
+}

@@ -1,0 +1,58 @@
+Navigation Tabs: 
+
+About Us - Complaints - How We Work - Contact Us
+ 
+
+
+Section Our Team [ remember ]
+
+
+
+-> technology : Angular - Angular Material - Fontawesome
+-> main colors: 
+
+- first color:   #00002D
+- second color: #03CD00
+- third color: #020015
+
+
+
+project structure 
+
+-app.component
+
+
+-navigation
+-- header [ logo ]
+-- navbar [ nav-links ]
+
+-footer
+-- reserved-rights
+-- contactus
+
+-Home [MAIN COMPONENT]
+
+////// [components] ////////
+
+-- slider
+--- slide
+
+--our-service
+
+--services
+--- service
+
+--other-services
+--- other-service
+
+[services]
+--shared [folder]
+---home.service
+
+
+-aboutus [Second  Component]
+
+-complaints [third  compoentn]
+
+-how-work [fourth compoentn]
+

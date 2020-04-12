@@ -1,0 +1,14 @@
+<div class="slider">
+    <slideshow [minHeight]="'525px'" [autoPlay]="true" [showArrows]="false" [imageUrls]="slides" [lazyLoad]="slides?.length > 1" [autoPlayWaitForLazyLoad]="true">
+    </slideshow>
+
+    <div class="card">
+        <mat-card>
+            <h2>{{ 'slider.title' | translate}}</h2>
+            <p>{{ 'slider.subtitle' | translate }}</p>
+            <a mat-raised-button routerLink="/how-we-work">
+            {{ 'slider.more' | translate }}
+            </a>
+        </mat-card>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<nav [dir]="direction">
+    <mat-toolbar>
+        <div class="nav-links">
+            <a mat-button routerLink="/aboutus" routerLinkActive="active-link">
+                {{'home.aboutus' | translate}}
+            </a>
+
+            <a mat-button routerLink="/how-we-work" routerLinkActive="active-link">
+                {{'home.how-work' | translate}}
+            </a>
+
+            <a mat-button routerLink="/complaints" routerLinkActive="active-link">
+                {{'home.complaints' | translate}}
+            </a>
+
+            <a mat-button (click)="goBottom()" routerLinkActive="active-link">
+                {{'home.contactus' | translate}}
+            </a>
+        </div>
+    </mat-toolbar>
+
+    <span class="seprator"></span>
+</nav>

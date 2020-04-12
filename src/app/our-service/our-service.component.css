@@ -1,0 +1,14 @@
+.our-service {
+    text-align: center;
+    margin: 40px auto;
+}
+
+.our-service h2 {
+    color: var(--first-color);
+}
+
+.our-service p {
+    color: var(--second-color);
+    text-align: justify;
+    line-height: 2;
+}

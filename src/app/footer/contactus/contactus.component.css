@@ -1,0 +1,22 @@
+h2 {
+    color: #fff;
+}
+
+.contactus {
+    padding: 40px 0;
+}
+
+.mat-label {
+    color: #fff;
+}
+
+.mat-form-field-appearance-outline .mat-form-field-outline {
+    color: white;
+}
+
+.mat-hint,
+input,
+ ::placeholder,
+.mat-form-field-label {
+    color: white;
+}

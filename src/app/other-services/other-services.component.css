@@ -1,0 +1,9 @@
+.other-services {
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+h2 {
+    color: var(--first-color);
+}
