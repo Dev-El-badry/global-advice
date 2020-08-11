@@ -22,3 +22,12 @@ mat-card {
     color: #fff;
     font-weight: bold;
 }
+
+@media screen and (max-width: 600px) {
+    mat-card {
+        width: 258px !important;
+    }
+    .card {
+        right: 12px !important;
+    }
+}

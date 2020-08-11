@@ -1,6 +1,6 @@
 .services {
     background: #f7f7f7;
-    text-align: center;
+   
     padding: 40px 0;
 }
 
@@ -9,6 +9,22 @@ h2 {
 }
 
 p {
-    color: var(--second-color);
+    /* color: var(--second-color); */
     text-align: center;
+}
+
+.__service {
+    margin: 20px 0;
+}
+
+.__service_single {
+    float: right;
+    width: 47%;
+    margin: 20px 1%;
+}
+
+@media only screen and (max-width: 600px) { 
+    .__service_single {
+        width: 100%;
+    }
 }

@@ -1,10 +1,59 @@
-.logo {
-    text-align: center;
+.header {
     background: #f7f7f7;
-    display: block;
+    height: 114px;
 }
 
 .logo img {
-    height: 130px;
-    width: 325px;
+    height: auto;
+     width: 250px;
 }
+
+.logo .img2 {
+    height: auto;
+    width: 200px;
+}
+
+.head-title {
+    line-height: 114px;
+    margin: 0;
+}
+
+.header-content {
+    position: relative;
+}
+
+.left-section {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.right-section {
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 750px) { 
+  .header-content {
+      display: none;
+  }
+  
+  .header-content-mobile {
+      display: block !important;
+  }
+
+  .header {
+      height: auto;
+  }
+
+  .top-header {
+      text-align: center;
+  }
+
+  .bottom-header .head-title {
+        line-height: 3;
+        text-align: center;
+    }
+  
+}
+  

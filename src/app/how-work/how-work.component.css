@@ -13,3 +13,8 @@ h3 {
 .how-work {
     padding: 40px 0;
 }
+
+img {
+    height: 250px;
+    width: 100%;
+}

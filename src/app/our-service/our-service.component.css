@@ -8,7 +8,30 @@
 }
 
 .our-service p {
-    color: var(--second-color);
+    /* color: var(--second-color); */
     text-align: justify;
     line-height: 2;
 }
+
+.title-tag {
+    text-align: right;
+}
+
+.title-tag {
+    font-size: 30px;
+    color: #000;
+    text-align: right;
+    -webkit-animation: title-tag 1s ease-in-out infinite alternate;
+    -moz-animation: title-tag 1s ease-in-out infinite alternate;
+    animation: title-tag 1s ease-in-out infinite alternate;
+  }
+  
+  @-webkit-keyframes title-tag {
+    /* from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px var(--second-color), 0 0 40px var(--second-color), 0 0 50px var(--second-color), 0 0 60px var(--second-color), 0 0 70px var(--second-color);
+    } */
+/*     
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px var(--first-color), 0 0 40px var(--first-color), 0 0 50px var(--first-color), 0 0 60px var(--first-color), 0 0 70px var(--first-color), 0 0 80px var(--first-color);
+    } */
+  }

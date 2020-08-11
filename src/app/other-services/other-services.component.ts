@@ -13,7 +13,7 @@ export class OtherServicesComponent implements OnInit {
     this.services = [
       {
         icon: 'fire',
-        title: 'تامين الحريق و السطو واالخطار اإلضافية'
+        title: 'تامين الحريق و السطو و الاخطار الاضافية'
       },
       {
         icon: 'running',
@@ -21,11 +21,11 @@ export class OtherServicesComponent implements OnInit {
       },
       {
         icon: 'hard-hat',
-        title: 'التامين الهندسي و اخطار المقاولين'
+        title: 'التأمين الهندسي و اخطار المقاولين'
       },
       {
         icon: 'tools',
-        title: 'تامين اآلالت و المعدات'
+        title: 'تامين الالات و المعدات'
       },
       {
         icon: 'home',
@@ -33,7 +33,7 @@ export class OtherServicesComponent implements OnInit {
       },
       {
         icon: 'code',
-        title: ' الحماية االلكترونية '
+        title: ' الحماية الالكترونية '
       },
       {
         icon: 'prescription-bottle-alt',
@@ -41,7 +41,7 @@ export class OtherServicesComponent implements OnInit {
       },
       {
         icon: 'ship',
-        title: 'التامين البحري والنقل البري'
+        title: 'التأمين البحري والنقل البري'
       },
       {
         icon: 'gas-pump',

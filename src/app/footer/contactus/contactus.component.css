@@ -1,12 +1,12 @@
 h2 {
-    color: #fff;
+    color: #444;
 }
 
 .contactus {
     padding: 40px 0;
 }
 
-.mat-label {
+/* .mat-label {
     color: #fff;
 }
 
@@ -19,4 +19,14 @@ input,
  ::placeholder,
 .mat-form-field-label {
     color: white;
+} */
+
+.website-contact-methods {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.email_website_text_value {
+    font-size: 22px;
+    font-weight: 700;
 }

@@ -1,2 +1,13 @@
-<app-header></app-header>
-<app-navbar></app-navbar>
+<div class="navigation">
+    <app-header></app-header>
+    <app-navbar fxHide.lt-md></app-navbar>
+    <span class="seprator"></span>
+    <div style="clear: both"></div>
+
+    <div class="nav-list" fxHide.gt-sm>
+        <button mat-icon-button (click)="onToggleSideNav()">
+        <mat-icon class="icon-menu">menu</mat-icon>
+        </button>
+    </div>
+
+</div>

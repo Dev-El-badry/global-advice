@@ -33,6 +33,10 @@ import { AboutusComponent } from './aboutus/aboutus.component';
 import { ComplaintsComponent } from './complaints/complaints.component';
 import { HowWorkComponent } from './how-work/how-work.component';
 import { OurTeamComponent } from './home/our-team/our-team.component';
+import { NavListComponent } from './navigation/nav-list/nav-list.component';
+import { ContactUsBottomComponent } from './contact-us-bottom/contact-us-bottom.component';
+import { JobsComponent } from './jobs/jobs.component';
+import { SharedService } from './shared/shared.service';
 
 @NgModule({
   declarations: [
@@ -54,7 +58,10 @@ import { OurTeamComponent } from './home/our-team/our-team.component';
     AboutusComponent,
     ComplaintsComponent,
     HowWorkComponent,
-    OurTeamComponent
+    OurTeamComponent,
+    NavListComponent,
+    ContactUsBottomComponent,
+    JobsComponent
   ],
   imports: [
     BrowserModule,
@@ -67,8 +74,9 @@ import { OurTeamComponent } from './home/our-team/our-team.component';
     ReactiveFormsModule,
     TranslateConfigModule,
     SlideshowModule,
+    FormsModule
   ],
-  providers: [TranslateConfigService],
+  providers: [TranslateConfigService, SharedService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

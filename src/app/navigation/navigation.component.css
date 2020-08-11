@@ -1,0 +1,22 @@
+span.seprator {
+    position: absolute;
+    bottom: 0;
+    left: 7%;
+    width: 86%;
+    height: 2px;
+    text-align: center;
+    margin: 0 auto;
+    background: var(--gradient-color);
+}
+
+.navigation {
+    position: relative;
+}
+
+.nav-list {
+    position: absolute;
+    top: 28px;
+    right: 10px;
+    background: #03cd00;
+    color: #fff;
+}

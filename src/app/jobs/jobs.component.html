@@ -1,0 +1,53 @@
+<!-- <div class="container" style="
+height: 53vh;
+">
+    <mat-card>
+        <mat-card-content>
+            <h2>للعمل فى جلوبال ادفيس ارسل السيرة الذاتيه الخاصة بك على :  <a href="mailto:jobs​@​globa​ladvi​ce​-gaib​.​com" class="website-contact-methods">jobs​@​globa​ladvi​ce​-gaib​.​com</a>
+            </h2>
+        </mat-card-content>
+    </mat-card>
+</div> -->
+
+<div class="jobs">
+    <div class="container">
+        
+        <h3>للتقديم للوظيفة فى جلوبال ادفايس</h3>
+        <form fxLayout="column" fxLayoutGap="10px" #f="ngForm" (ngSubmit)="onSubmit(f)">
+            <mat-form-field >
+                <mat-label>
+                    {{'jobs.name' | translate }}
+                </mat-label>
+                <input type="text" matInput name="name" ngModel #name="ngModel" required/>
+            </mat-form-field>
+
+            <mat-form-field >
+                <mat-label>
+                    {{'jobs.email' | translate }}
+                </mat-label>
+                <input type="email" email matInput name="email" ngModel #email="ngModel" />
+            </mat-form-field>
+
+            <mat-form-field >
+                <mat-label>
+                    {{'jobs.phone' | translate }}
+                </mat-label>
+                <input type="tel" matInput name="phone" ngModel #phone="ngModel"/>
+            </mat-form-field>
+
+            <mat-form-field appearance="fill">
+                <mat-label>{{ 'jobs.more_details' | translate }}</mat-label>
+                <textarea rows="10" matInput name="more_details" ngModel #more_details="ngModel"></textarea>
+            </mat-form-field>
+
+            <p>{{ 'jobs.upload_cv' | translate }}</p>
+            <input class="ng-hide" id="input-file-id" accept="application/msword, application/pdf" name="cv_file" required ngModel (change)="onChange($event)" #cv_file="ngModel"  style="display: none;" type="file" />
+            <label mat-raised-button for="input-file-id">{{ 'jobs.choose_file' | translate }}</label>
+   
+            <button mat-raised-button type="submit" [disabled]="f.invalid"> {{'jobs.send' | translate }}</button>
+
+
+    
+        </form>
+    </div>
+</div>

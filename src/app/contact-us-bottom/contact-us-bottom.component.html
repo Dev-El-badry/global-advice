@@ -1,0 +1,99 @@
+<div class="contact-us-bottom" *ngIf="!isShow" >
+    <div class="contact-us-button whatsapp" (click)="openWhatsapp()">
+        <div class="contact-us__icon"> <i class="fab fa-whatsapp whatsapp-icon"></i></div>
+        <div class="contact-us__text"> واتساب</div>
+    </div>
+    <div class="contact-us-button" (click)="openModal()">
+        <div class="contact-us__icon"> <i class="fa fa-phone contact"></i></div>
+        <div class="contact-us__text"> للتواصل معك</div>
+    </div>
+</div>
+
+
+<div class="icon-bar">
+    <a href="https://www.facebook.com/GAIBBrokerge/" target="_blank" class="facebook"><i class="fab fa-facebook"></i></a> 
+    <a href="https://twitter.com/AdviceBrokerage" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a> 
+    <!-- <a href="globaladvice.gaib@gmail.com" target="_blank" class="google"><i class="fab fa-google"></i></a>  -->
+    <a href="http://linkedin.com/in/global-advice-4539801b2" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/channel/UCePGWQyi0cEi7n-Ur8y_vFQ" target="_blank" class="youtube"><i class="fab fa-youtube"></i></a> 
+    <a href="https://www.instagram.com/global.gaib/" target="_blank" class="insta"><i class="fab fa-instagram"></i></a> 
+</div>
+
+
+<div class="quotation" [dir]="currentDir" *ngIf="isShow">
+    <mat-card>
+
+
+       <mat-card-header>
+         
+           <mat-card-title>
+             للتواصل معك
+           </mat-card-title>
+          
+        
+         <div fxFlex></div>
+         <div fxLayoutAlign="center center">
+           <button mat-stroked-button (click)="isShow = !isShow">اغلاق</button>
+         </div>
+        </mat-card-header>
+       
+           
+       <mat-card-content>
+           <form #f="ngForm" (ngSubmit)="onSubmit(f)" >
+               <div class="form-quotation">
+                   
+                   <mat-form-field appearance="outline">
+                       <mat-label>الاسم</mat-label>
+                       <input matInput type="text" name="name" ngModel #name="ngModel" required>
+                   </mat-form-field>
+       
+                   <mat-form-field appearance="outline">
+                       <mat-label>رقم الهاتف</mat-label>
+                       <input matInput type="tel" name="phone" ngModel #phone="ngModel" required>
+                       <mat-icon matSuffix>phone</mat-icon>
+                       
+                   </mat-form-field>
+       
+                   <mat-form-field appearance="outline">
+                       <mat-label>البريد الالكترونى</mat-label>
+                       <input matInput type="email"  name="email" ngModel #email="ngModel" >
+                       <mat-icon matSuffix>mail</mat-icon>
+                       
+                   </mat-form-field>
+       
+                   <mat-form-field appearance="outline">
+                       <mat-label>اسم الشركة</mat-label>
+                       <input matInput type="text"  name="companyEmail" ngModel #companyEmail="ngModel" >
+                       <mat-icon matSuffix>business</mat-icon>
+                       
+                   </mat-form-field>
+       
+                   <mat-form-field appearance="outline">
+                       <mat-label>الوقت (من)  </mat-label>
+                       <input matInput  type="datetime-local"  name="dateFrom" ngModel #dateFrom="ngModel" >
+                       <!-- <mat-datepicker-toggle matSuffix [for]="picker"   ></mat-datepicker-toggle>
+                       <mat-datepicker #picker  ></mat-datepicker> -->
+                   
+                       
+                   </mat-form-field>
+       
+       
+                   <mat-form-field appearance="outline">
+                       <mat-label>الوقت (الى)</mat-label>
+                       <input matInput  type="datetime-local" name="dateTo" ngModel #dateTo="ngModel" >
+                    
+                       
+                   </mat-form-field>
+   
+                   <mat-card-actions>
+                       <button style="width: 100%;" mat-raised-button color="primary" type="submit" [disabled]="!f.valid">ارسال البيانات</button>
+                   </mat-card-actions>
+                   
+               </div>
+           </form>
+       </mat-card-content>
+             
+          
+        
+    </mat-card>
+ </div>

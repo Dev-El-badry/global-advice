@@ -1,0 +1,25 @@
+<mat-nav-list>
+    <a mat-list-item (click)="onClose()" routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+        true}">
+       الصفحة الرئيسية
+    </a>
+
+    <a mat-list-item (click)="onClose()" routerLink="/aboutus" routerLinkActive="active-link">
+        {{'home.aboutus' | translate}}
+    </a>
+
+    <a mat-list-item (click)="onClose()" routerLink="/how-we-work" routerLinkActive="active-link">
+        {{'home.how-work' | translate}}
+    </a>
+
+    <a mat-list-item (click)="onClose()" routerLink="/complaints" routerLinkActive="active-link">
+        {{'home.complaints' | translate}}
+    </a>
+    <a mat-list-item (click)="onClose()" routerLink="/jobs" routerLinkActive="active-link">
+        {{'home.jobs' | translate}}
+    </a>
+
+    <a mat-list-item routerLink="/contactus" routerLinkActive="active-link">
+        {{'home.contactus' | translate}}
+    </a>
+</mat-nav-list>

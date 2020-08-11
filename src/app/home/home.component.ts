@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  slides: string[];
   constructor() { }
 
   ngOnInit() {
+    this.slides = [
+      'assets/images/slides/slide1.jpeg',
+      'assets/images/slides/slide2.jpeg'
+    ]
   }
 
 }

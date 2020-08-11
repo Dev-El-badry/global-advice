@@ -1,7 +1,23 @@
-<app-navigation></app-navigation>
+<div class="main-component">
+    <mat-drawer-container [hasBackdrop]="true" [dir]="currentDir">
 
-<main [dir]="currentDir">
-    <router-outlet></router-outlet>
-</main>
+        <mat-drawer #drawer position="start" mode="push" #sidenav navigation="role" class="app-sidenav">
+            <app-nav-list (closeSideNav)="drawer.close()"></app-nav-list>
+        </mat-drawer>
+        <mat-drawer-content>
+            <app-navigation (toggleSideNav)="drawer.toggle()"></app-navigation>
+    
+            <main [dir]="currentDir">
+                <router-outlet></router-outlet>
+            </main>
+    
+            <app-footer></app-footer>
+    
+        </mat-drawer-content>
+    </mat-drawer-container>
 
-<app-footer></app-footer>
+   
+
+
+    <app-contact-us-bottom></app-contact-us-bottom>
+</div>

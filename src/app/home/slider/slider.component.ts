@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-slider',
@@ -6,14 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent implements OnInit {
-  slides: string[];
+  @Input('slides') slides: string[];
   constructor() { }
 
   ngOnInit() {
-    this.slides = [
-      'assets/images/slides/slide1.jpeg',
-      'assets/images/slides/slide2.jpeg'
-    ]
+   
   }
 
 }

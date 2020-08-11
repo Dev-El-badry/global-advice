@@ -11,12 +11,13 @@ import { TranslateConfigService } from './shared/translate-config.service';
 export class AppComponent implements OnInit {
   title = 'global-advice';
   currentDir;
+  isTrue: boolean = true;
   constructor(private translateService: TranslateConfigService) {}
 
   ngOnInit() {
 
-    if(!localStorage.getItem('lang')) {
-      localStorage.setItem('lang', 'ar');
+    if(!localStorage.getItem('_global_lang')) {
+      localStorage.setItem('_global_lang', 'ar');
       this.setLang();
     } else {
       this.setLang();
@@ -30,7 +31,7 @@ export class AppComponent implements OnInit {
     }
 
   }
-  get lang() { return localStorage.getItem("lang"); }
+  get lang() { return localStorage.getItem("_global_lang"); }
 
   setLang() {
     this.translateService.setLanguage(this.lang);

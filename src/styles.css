@@ -24,7 +24,8 @@ body {
 .mat-raised-button,
 .mat-stroked-button,
 .mat-card,
-.mat-checkbox {
+.mat-checkbox,
+.mat-list-item {
     font-family: Circle-Light, Roboto !important;
 }
 
@@ -67,27 +68,29 @@ body {
 /* Border */
 
 .mat-form-field-appearance-outline .mat-form-field-outline {
-    color: white;
+    color: #444;
 }
 
 
 /* Font color */
 
-.contactus input.mat-input-element {
+/* .contactus input.mat-input-element {
     color: white;
 }
 
 .contactus mat-label {
     color: white;
-}
+} */
 
+
+/* 
 .mat-form-field-wrapper {
     padding-bottom: 0;
 }
 
 .mat-form-field-appearance-outline .mat-form-field-wrapper {
     margin: 0;
-}
+} */
 
 .mat-form-field {
     font-family: Circle-Light;

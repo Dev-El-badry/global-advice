@@ -1,14 +1,24 @@
 <div class="service">
     <mat-card>
         <div class="image">
-            <mat-icon>{{service.icon}}</mat-icon>
+            
         </div>
         <mat-card-title>
-            {{service.title}}
+            <div class="right-section"  >
+
+                <mat-icon>{{service.icon}}</mat-icon>
+                {{service.title}}
+
+                <i  class="fa fa-arrow-down __icon-control" [id]="'down'+service.id" [style.display]="!show ? 'none' : 'block'" (click)="onShow(service.id)"></i>
+                <i  class="fa fa-arrow-up __icon-control" [id]="'up'+service.id" [style.display]="show ? 'none' : 'block'" (click)="onHide(service.id)"></i>
+            </div>
+
+           
         </mat-card-title>
 
-        <mat-card-content>
-            {{service.content}}
+        <mat-card-content [id]="'div'+service.id">
+            {{service.content}}.
+            <a (click)="openContact()" class="more-link">المزيد</a>
         </mat-card-content>
     </mat-card>
 </div>

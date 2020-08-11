@@ -1,0 +1,46 @@
+mat-card {
+    margin: 60px 0;
+}
+
+a {
+    display: block
+}
+
+.jobs {
+    margin: 60px auto;
+}
+form {
+    width: 80%;
+    background: #f7f7f7;
+    padding: 10px 25px;
+}
+
+button.mat-raised-button {
+    background: var(--second-color);
+    color: #fff;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 100% !important;
+    }
+
+    label {
+        width: 100%;
+    }
+}
+
+label {
+    display: block;
+    margin-bottom: 40px;
+    width: 200px;
+    background: var(--second-color);
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 6px;
+    color: white;
+    margin-bottom: 40px !important;
+    cursor: pointer;
+}

@@ -7,34 +7,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OurTeamComponent implements OnInit {
   persons: any[];
+  persons2: any[];
   constructor() { }
 
   ngOnInit() {
     this.persons = [
       {
         name: 'الأستاذ/ يوسف النباط',
-        position: ' رئيس مجلس اإلدارة'
+        position: ' رئيس مجلس الادارة'
       },
       {
         name: 'الأستاذ/ محمد عادل المرسي',
-        position: 'نائب رئيس مجلس اإلدارة'
+        position: 'نائب رئيس مجلس الادارة'
       },
       {
         name: 'الأستاذ/ جمال الدين خربوش',
-        position: 'عضو مجلس اإلدارة'
+        position: 'عضو مجلس الادارة'
+      }
+    ];
+
+    this.persons2 = [
+      
+      {
+        name: 'الأستاذ/ أحمد الوشاحى ',
+        position: 'المحاسب القانونى'
       },
       {
-        name: 'الأستاذة/ عبير خطاب ',
-        position: 'العضو المنتدب الفني'
-      },
-      {
-        name: 'الأستاذة/ حنان محمد المرسي',
-        position: 'العضو المنتدب المالي'
-      },
-      {
-        name: 'الأستاذ/ آنيس فاروق ',
-        position: ' رئيس قسم المبيعات '
-      },
+        name: 'الأستاذ/ خالد حجازى',
+        position: 'المستشار القانونى'
+      }
     ];
   }
 

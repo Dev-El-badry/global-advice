@@ -14,3 +14,9 @@ button.mat-raised-button {
     font-weight: bold;
     font-size: 19px;
 }
+
+@media screen and (max-width: 600px) {
+    form {
+        width: 100% !important;
+    }
+}

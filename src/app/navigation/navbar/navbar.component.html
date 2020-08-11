@@ -1,6 +1,10 @@
-<nav [dir]="direction">
+<nav  lt-md>
     <mat-toolbar>
         <div class="nav-links">
+            <a mat-button routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact:
+                true}">
+                الصفحة الرئيسية
+            </a>
             <a mat-button routerLink="/aboutus" routerLinkActive="active-link">
                 {{'home.aboutus' | translate}}
             </a>
@@ -13,11 +17,15 @@
                 {{'home.complaints' | translate}}
             </a>
 
-            <a mat-button (click)="goBottom()" routerLinkActive="active-link">
+            <a mat-button routerLink="/jobs" routerLinkActive="active-link">
+                {{'home.jobs' | translate}}
+            </a>
+
+            <a mat-button routerLink="/contactus" routerLinkActive="active-link">
                 {{'home.contactus' | translate}}
             </a>
         </div>
     </mat-toolbar>
 
-    <span class="seprator"></span>
+    <!-- <span class="seprator"></span> -->
 </nav>

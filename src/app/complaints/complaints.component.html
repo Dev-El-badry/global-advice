@@ -1,90 +1,53 @@
 <div class="com">
     <div class="container">
-        <form fxLayout="column" fxLayoutGap="10px">
-            <mat-form-field>
-                <mat-label>
-                    {{'com.type' | translate }}
-                </mat-label>
-                <input type="text" matInput />
-            </mat-form-field>
+        <form fxLayout="column" fxLayoutGap="10px" #f="ngForm" (ngSubmit)="onSubmit(f)">
 
-            <mat-label>
-                {{'com.managment' | translate }}
-            </mat-label>
-
-            <div fxLayout="row wrap" fxLayoutGap="10px">
-                <mat-checkbox>
-                    {{'com.serv1' | translate}}
-                </mat-checkbox>
-                <mat-checkbox>
-                    {{'com.serv2' | translate}}
-                </mat-checkbox>
-                <mat-checkbox>
-                    {{'com.serv3' | translate}}
-                </mat-checkbox>
-                <mat-checkbox>
-                    {{'com.serv4' | translate}}
-                </mat-checkbox>
-                <mat-checkbox>
-                    {{'com.serv5' | translate}}
-                </mat-checkbox>
-                <mat-checkbox>
-                    {{'com.serv6' | translate}}
-                </mat-checkbox>
-
-            </div>
 
             <mat-form-field>
                 <mat-label>
                     {{'com.name' | translate }}
                 </mat-label>
-                <input type="text" matInput />
+                <input type="text" matInput ngModel name="contact_name" #contact_name="ngModel" required/>
             </mat-form-field>
 
             <mat-form-field>
                 <mat-label>
                     {{'com.email' | translate }}
                 </mat-label>
-                <input type="email" matInput />
+                <input type="email" matInput #email_from="ngModel" ngModel name="email_from" email />
             </mat-form-field>
 
             <mat-form-field>
                 <mat-label>
                     {{'com.phone' | translate }}
                 </mat-label>
-                <input type="text" matInput />
+                <input type="text" matInput  #mobile="ngModel" ngModel name="mobile" required/>
             </mat-form-field>
 
             <mat-form-field>
                 <mat-label>
                     {{'com.town' | translate }}
                 </mat-label>
-                <input type="text" matInput />
+                <input type="text" matInput #address="ngModel" ngModel name="address"/>
             </mat-form-field>
 
             <mat-form-field>
                 <mat-label>
                     {{'com.num_of_doc' | translate }}
                 </mat-label>
-                <input type="text" matInput />
+                <input type="text" matInput  #policy_no="ngModel" ngModel name="policy_no"/>
             </mat-form-field>
 
-            <mat-form-field>
-                <mat-label>
-                    {{'com.id' | translate }}
-                </mat-label>
-                <input type="text" matInput />
-            </mat-form-field>
 
             <mat-form-field>
                 <mat-label>
                     {{'com.details_request' | translate }}
                 </mat-label>
-                <input type="text" matInput />
+                <input type="text" matInput #description="ngModel" ngModel name="description"/>
             </mat-form-field>
 
 
-            <button mat-raised-button type="submit"> {{'com.send' | translate }}</button>
+            <button mat-raised-button type="submit" [disabled]="f.invalid"> {{'com.send' | translate }}</button>
 
 
         </form>
